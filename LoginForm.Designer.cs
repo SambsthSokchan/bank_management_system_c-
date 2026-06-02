@@ -54,7 +54,7 @@ namespace bank_management_system
             this.lblUsernameEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsernameEmail.Location = new System.Drawing.Point(145, 131);
             this.lblUsernameEmail.Name = "lblUsernameEmail";
-            this.lblUsernameEmail.Size = new System.Drawing.Size(182, 25);
+            this.lblUsernameEmail.Size = new System.Drawing.Size(172, 25);
             this.lblUsernameEmail.TabIndex = 1;
             this.lblUsernameEmail.Text = "Username / Email:";
             // 
@@ -137,7 +137,7 @@ namespace bank_management_system
             this.Controls.Add(this.lblUsernameEmail);
             this.Controls.Add(this.label1);
             this.Name = "LoginForm";
-            this.Text = "LoginForm";
+            this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();
 

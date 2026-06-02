@@ -56,23 +56,23 @@ namespace bank_management_system
             }
             else if (currentUserRole.Equals("Customer", StringComparison.OrdinalIgnoreCase))
             {
-                // Customer wants: Dashboard, Accounts, Transactions, Profile
+                // Customer wants: Dashboard, Transactions, Profile
                 button2.Visible = false; // Customers (hidden)
                 
                 // Accounts (button3)
-                button3.Location = new Point(72, 205); // Move up to slot 2
+                button3.Visible = false; // Accounts (hidden)
                 
                 // Transactions (button4)
-                button4.Location = new Point(72, 274); // Move up to slot 3
+                button4.Location = new Point(72, 205); // Move up to slot 2
                 
                 button5.Visible = false; // Manage User (hidden)
                 
                 // Reports (button6) repurposed as Profile
                 button6.Text = "Profile";
-                button6.Location = new Point(72, 344); // Move up to slot 4
+                button6.Location = new Point(72, 274); // Move up to slot 3
                 
                 // Sign Out (btnSignOut)
-                btnSignOut.Location = new Point(72, 414); // Move up to slot 5
+                btnSignOut.Location = new Point(72, 344); // Move up to slot 4
             }
         }
 
@@ -215,6 +215,11 @@ namespace bank_management_system
         }
 
         private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelContent_Paint(object sender, PaintEventArgs e)
         {
 
         }

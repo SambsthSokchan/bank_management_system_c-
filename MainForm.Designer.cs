@@ -214,6 +214,7 @@ namespace bank_management_system
             this.panelContent.Name = "panelContent";
             this.panelContent.Size = new System.Drawing.Size(938, 525);
             this.panelContent.TabIndex = 13;
+            this.panelContent.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContent_Paint);
             // 
             // MainForm
             // 

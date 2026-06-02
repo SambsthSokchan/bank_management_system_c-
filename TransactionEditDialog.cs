@@ -28,7 +28,7 @@ namespace bank_management_system
                 // User requirement: Support Deposit and Transfer for Customer role
                 cmbType.Items.Clear();
                 cmbType.Items.AddRange(new object[] { "Deposit", "Transfer" });
-                cmbType.SelectedIndex = 0;
+                cmbType.SelectedIndex = 1; // Default to Transfer since button says 'Transfer Money'
             }
             else
             {
@@ -77,6 +77,12 @@ namespace bank_management_system
                 lblDestinationAccount.Visible = true;
                 txtDestinationAccount.Visible = true;
                 lblRecipientName.Visible = true;
+                
+                // Shift down to make room
+                lblAmount.Top = 270;
+                txtAmount.Top = 295;
+                lblDescription.Top = 330;
+                txtDescription.Top = 355;
             }
             else
             {
@@ -85,6 +91,12 @@ namespace bank_management_system
                 lblRecipientName.Visible = false;
                 txtDestinationAccount.Text = "";
                 lblRecipientName.Text = "";
+                
+                // Shift up to remove gap
+                lblAmount.Top = 190;
+                txtAmount.Top = 215;
+                lblDescription.Top = 250;
+                txtDescription.Top = 275;
             }
         }
 

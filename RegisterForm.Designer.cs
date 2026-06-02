@@ -74,7 +74,7 @@ namespace bank_management_system
             this.txtFirstName.Location = new System.Drawing.Point(382, 80);
             this.txtFirstName.Multiline = true;
             this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(184, 36);
+            this.txtFirstName.Size = new System.Drawing.Size(252, 36);
             this.txtFirstName.TabIndex = 2;
             // 
             // lblLastName
@@ -93,7 +93,7 @@ namespace bank_management_system
             this.txtLastName.Location = new System.Drawing.Point(382, 130);
             this.txtLastName.Multiline = true;
             this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(184, 36);
+            this.txtLastName.Size = new System.Drawing.Size(252, 36);
             this.txtLastName.TabIndex = 4;
             // 
             // lblUsername
@@ -112,7 +112,7 @@ namespace bank_management_system
             this.txtUsername.Location = new System.Drawing.Point(382, 180);
             this.txtUsername.Multiline = true;
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(184, 36);
+            this.txtUsername.Size = new System.Drawing.Size(252, 36);
             this.txtUsername.TabIndex = 17;
             // 
             // lblPhoneNumber
@@ -131,7 +131,7 @@ namespace bank_management_system
             this.txtPhoneNumber.Location = new System.Drawing.Point(382, 230);
             this.txtPhoneNumber.Multiline = true;
             this.txtPhoneNumber.Name = "txtPhoneNumber";
-            this.txtPhoneNumber.Size = new System.Drawing.Size(184, 36);
+            this.txtPhoneNumber.Size = new System.Drawing.Size(252, 36);
             this.txtPhoneNumber.TabIndex = 6;
             // 
             // lblEmail
@@ -150,7 +150,7 @@ namespace bank_management_system
             this.txtEmail.Location = new System.Drawing.Point(382, 280);
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(184, 36);
+            this.txtEmail.Size = new System.Drawing.Size(252, 36);
             this.txtEmail.TabIndex = 8;
             // 
             // lblPassword
@@ -170,7 +170,7 @@ namespace bank_management_system
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(184, 36);
+            this.txtPassword.Size = new System.Drawing.Size(252, 36);
             this.txtPassword.TabIndex = 10;
             // 
             // lblConfirmPassword
@@ -190,7 +190,7 @@ namespace bank_management_system
             this.txtConfirmPassword.Multiline = true;
             this.txtConfirmPassword.Name = "txtConfirmPassword";
             this.txtConfirmPassword.PasswordChar = '*';
-            this.txtConfirmPassword.Size = new System.Drawing.Size(184, 36);
+            this.txtConfirmPassword.Size = new System.Drawing.Size(252, 36);
             this.txtConfirmPassword.TabIndex = 12;
             // 
             // btnRegister
