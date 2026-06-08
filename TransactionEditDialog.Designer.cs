@@ -38,7 +38,7 @@ namespace bank_management_system
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
             this.lblTitle.Location = new System.Drawing.Point(30, 20);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(188, 30);
+            this.lblTitle.Size = new System.Drawing.Size(185, 30);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "New Transaction";
             // 
@@ -54,7 +54,6 @@ namespace bank_management_system
             // 
             // cmbAccount
             // 
-            this.cmbAccount.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
             this.cmbAccount.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbAccount.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cmbAccount.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -70,7 +69,7 @@ namespace bank_management_system
             this.lblType.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblType.Location = new System.Drawing.Point(30, 130);
             this.lblType.Name = "lblType";
-            this.lblType.Size = new System.Drawing.Size(111, 19);
+            this.lblType.Size = new System.Drawing.Size(110, 19);
             this.lblType.TabIndex = 3;
             this.lblType.Text = "Transaction Type";
             // 
@@ -88,38 +87,6 @@ namespace bank_management_system
             this.cmbType.Size = new System.Drawing.Size(320, 25);
             this.cmbType.TabIndex = 4;
             this.cmbType.SelectedIndexChanged += new System.EventHandler(this.cmbType_SelectedIndexChanged);
-            // 
-            // lblDestinationAccount
-            // 
-            this.lblDestinationAccount.AutoSize = true;
-            this.lblDestinationAccount.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDestinationAccount.Location = new System.Drawing.Point(30, 190);
-            this.lblDestinationAccount.Name = "lblDestinationAccount";
-            this.lblDestinationAccount.Size = new System.Drawing.Size(133, 19);
-            this.lblDestinationAccount.TabIndex = 11;
-            this.lblDestinationAccount.Text = "Destination Account";
-            this.lblDestinationAccount.Visible = false;
-            // 
-            // txtDestinationAccount
-            // 
-            this.txtDestinationAccount.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDestinationAccount.Location = new System.Drawing.Point(30, 215);
-            this.txtDestinationAccount.Name = "txtDestinationAccount";
-            this.txtDestinationAccount.Size = new System.Drawing.Size(320, 25);
-            this.txtDestinationAccount.TabIndex = 12;
-            this.txtDestinationAccount.Visible = false;
-            this.txtDestinationAccount.TextChanged += new System.EventHandler(this.txtDestinationAccount_TextChanged);
-            // 
-            // lblRecipientName
-            // 
-            this.lblRecipientName.AutoSize = true;
-            this.lblRecipientName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRecipientName.ForeColor = System.Drawing.Color.Gray;
-            this.lblRecipientName.Location = new System.Drawing.Point(30, 245);
-            this.lblRecipientName.Name = "lblRecipientName";
-            this.lblRecipientName.Size = new System.Drawing.Size(0, 15);
-            this.lblRecipientName.TabIndex = 13;
-            this.lblRecipientName.Visible = false;
             // 
             // lblAmount
             // 
@@ -157,6 +124,38 @@ namespace bank_management_system
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(320, 85);
             this.txtDescription.TabIndex = 8;
+            // 
+            // lblDestinationAccount
+            // 
+            this.lblDestinationAccount.AutoSize = true;
+            this.lblDestinationAccount.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDestinationAccount.Location = new System.Drawing.Point(30, 190);
+            this.lblDestinationAccount.Name = "lblDestinationAccount";
+            this.lblDestinationAccount.Size = new System.Drawing.Size(133, 19);
+            this.lblDestinationAccount.TabIndex = 11;
+            this.lblDestinationAccount.Text = "Destination Account";
+            this.lblDestinationAccount.Visible = false;
+            // 
+            // txtDestinationAccount
+            // 
+            this.txtDestinationAccount.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDestinationAccount.Location = new System.Drawing.Point(30, 215);
+            this.txtDestinationAccount.Name = "txtDestinationAccount";
+            this.txtDestinationAccount.Size = new System.Drawing.Size(320, 25);
+            this.txtDestinationAccount.TabIndex = 12;
+            this.txtDestinationAccount.Visible = false;
+            this.txtDestinationAccount.TextChanged += new System.EventHandler(this.txtDestinationAccount_TextChanged);
+            // 
+            // lblRecipientName
+            // 
+            this.lblRecipientName.AutoSize = true;
+            this.lblRecipientName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRecipientName.ForeColor = System.Drawing.Color.Gray;
+            this.lblRecipientName.Location = new System.Drawing.Point(30, 245);
+            this.lblRecipientName.Name = "lblRecipientName";
+            this.lblRecipientName.Size = new System.Drawing.Size(0, 15);
+            this.lblRecipientName.TabIndex = 13;
+            this.lblRecipientName.Visible = false;
             // 
             // btnSave
             // 
@@ -214,8 +213,10 @@ namespace bank_management_system
             this.Name = "TransactionEditDialog";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "New Transaction";
+            this.Load += new System.EventHandler(this.TransactionEditDialog_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         private System.Windows.Forms.Label lblTitle;

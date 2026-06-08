@@ -177,5 +177,10 @@ namespace bank_management_system
                 MessageBox.Show("Please select an account to close.", "Selection Required", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void AccountForm_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

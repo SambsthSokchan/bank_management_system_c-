@@ -159,8 +159,14 @@
     <EmbeddedResource Include="ReportForm.resx">
       <DependentUpon>ReportForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TransactionEditDialog.resx">
+      <DependentUpon>TransactionEditDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TransactionForm.resx">
       <DependentUpon>TransactionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserEditDialog.resx">
+      <DependentUpon>UserEditDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserManagementForm.resx">
       <DependentUpon>UserManagementForm.cs</DependentUpon>

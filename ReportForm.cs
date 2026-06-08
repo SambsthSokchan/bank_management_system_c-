@@ -200,5 +200,10 @@ namespace bank_management_system
             }
             e.HasMorePages = false;
         }
+
+        private void dgvReports_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

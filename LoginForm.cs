@@ -111,5 +111,10 @@ namespace bank_management_system
         {
             Application.Exit();
         }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

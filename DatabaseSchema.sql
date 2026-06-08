@@ -11,7 +11,7 @@ CREATE TABLE Users (
     PasswordHash NVARCHAR(255) NOT NULL,
     Role NVARCHAR(20),
     Phone NVARCHAR(20),
-    Email NVARCHAR(100),
+    Email NVARCHAR(100) UNIQUE,
     CreatedAt DATETIME DEFAULT GETDATE(),
     IsActive BIT DEFAULT 1
 );

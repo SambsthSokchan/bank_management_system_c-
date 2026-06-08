@@ -61,7 +61,7 @@ namespace bank_management_system
                         t.Description, t.TransactionDate 
                         FROM Transactions t
                         JOIN Accounts a ON t.AccountID = a.AccountID
-                        WHERE (@Filter = '' OR a.AccountNumber LIKE '%' + @Filter + '%' OR t.TransactionType LIKE '%' + @Filter + '%' OR ISNULL(t.Description, '') LIKE '%' + @Filter + '%')";
+                        WHERE (@Filter = '' OR a.AccountNumber LIKE '%' + @Filter + '%' OR t.TransactionType LIKE '%' + @Filter + '%' OR ISNULL(t.Description, '') LIKE '%' + @Filter + '%' OR CAST(t.Amount AS VARCHAR) LIKE '%' + @Filter + '%' OR CONVERT(VARCHAR, t.TransactionDate, 103) LIKE '%' + @Filter + '%' OR CONVERT(VARCHAR, t.TransactionDate, 105) LIKE '%' + @Filter + '%')";
                         
                     if (currentUserRole == "Customer")
                     {

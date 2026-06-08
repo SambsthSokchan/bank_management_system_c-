@@ -137,7 +137,8 @@ namespace bank_management_system
             this.Controls.Add(this.lblUsernameEmail);
             this.Controls.Add(this.label1);
             this.Name = "LoginForm";
-            this.Text = "Login";
+            this.Text = " ";
+            this.Load += new System.EventHandler(this.LoginForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

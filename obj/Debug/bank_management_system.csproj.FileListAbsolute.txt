@@ -16,3 +16,5 @@ D:\C#_32_41\bank_management_system_v1\bank_management_system\bank_management_sys
 D:\C#_32_41\bank_management_system_v1\bank_management_system\bank_management_system\obj\Debug\bank_management_system.TransactionForm.resources
 D:\C#_32_41\bank_management_system_v1\bank_management_system\bank_management_system\obj\Debug\bank_management_system.UserManagementForm.resources
 D:\C#_32_41\bank_management_system_v1\bank_management_system\bank_management_system\obj\Debug\bank_management_system.DashboardForm.resources
+D:\C#_32_41\bank_management_system_v1\bank_management_system\bank_management_system\obj\Debug\bank_management_system.UserEditDialog.resources
+D:\C#_32_41\bank_management_system_v1\bank_management_system\bank_management_system\obj\Debug\bank_management_system.TransactionEditDialog.resources

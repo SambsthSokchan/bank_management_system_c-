@@ -137,5 +137,10 @@ namespace bank_management_system
                 return Convert.ToBase64String(bytes);
             }
         }
+
+        private void UserEditDialog_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

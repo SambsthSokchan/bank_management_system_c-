@@ -164,5 +164,10 @@ namespace bank_management_system
             login.Show();
             this.Hide();
         }
+
+        private void RegisterForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

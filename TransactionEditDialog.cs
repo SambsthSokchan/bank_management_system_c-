@@ -370,5 +370,10 @@ namespace bank_management_system
                 MessageBox.Show(ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void TransactionEditDialog_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

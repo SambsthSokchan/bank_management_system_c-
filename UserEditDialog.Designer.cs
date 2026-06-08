@@ -162,14 +162,15 @@ namespace bank_management_system
             // chkIsActive
             // 
             this.chkIsActive.AutoSize = true;
+            this.chkIsActive.Checked = true;
+            this.chkIsActive.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkIsActive.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkIsActive.Location = new System.Drawing.Point(30, 430);
             this.chkIsActive.Name = "chkIsActive";
-            this.chkIsActive.Size = new System.Drawing.Size(81, 23);
+            this.chkIsActive.Size = new System.Drawing.Size(79, 23);
             this.chkIsActive.TabIndex = 13;
             this.chkIsActive.Text = "Is Active";
             this.chkIsActive.UseVisualStyleBackColor = true;
-            this.chkIsActive.Checked = true;
             // 
             // btnSave
             // 
@@ -229,8 +230,10 @@ namespace bank_management_system
             this.Name = "UserEditDialog";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "User Edit";
+            this.Load += new System.EventHandler(this.UserEditDialog_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         private System.Windows.Forms.Label lblTitle;
